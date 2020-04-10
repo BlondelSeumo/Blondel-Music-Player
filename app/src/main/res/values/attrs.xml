@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PlayerPanel">
+        <attr name="panelHeight" format="dimension" />
+        <attr name="shadowheight" format="dimension" />
+        <attr name="offset" format="dimension" />
+        <attr name="fadecolor" format="color" />
+        <attr name="velocity" format="integer" />
+        <attr name="dragview" format="reference" />
+        <attr name="scrollview" format="reference" />
+        <attr name="overlay" format="boolean"/>
+        <attr name="clippanel" format="boolean"/>
+        <attr name="anchorpoint" format="float" />
+        <attr name="instate" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="anchored" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+        <attr name="scrollinter" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="playerview">
+        <attr name="cover" format="integer" />
+        <attr name="buttonColor" format="color"/>
+        <attr name="progressEmptyColor" format="color"/>
+        <attr name="progressLoadedColor" format="color"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+</resources>

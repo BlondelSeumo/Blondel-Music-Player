@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        >
+
+        <ImageView
+            android:id="@+id/thumbnailImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_music_icon" />
+
+        <RelativeLayout
+            android:id="@+id/hjjhj"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/thumbnailImg"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/songName"
+                android:lines="1"
+                android:maxLength="27"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aati Hai To Chal"
+                android:textColor="#181818" />
+
+            <TextView
+                android:id="@+id/artalbname"
+                android:lines="1"
+                android:maxLength="27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/songName"
+                android:text="Unknown Artist - Unknown Album"
+                android:textColor="#989898" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/dividerView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#b9b9b9"
+            android:layout_below="@+id/hjjhj"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@+id/thumbnailImg"
+            android:layout_toEndOf="@+id/thumbnailImg" />
+    </RelativeLayout>
+
+</RelativeLayout>

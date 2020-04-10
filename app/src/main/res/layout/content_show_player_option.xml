@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#25272d"
+    >
+    <TextView
+        android:id="@+id/textViewSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:text="Rock With You"
+        android:layout_marginTop="50dp"/>
+
+
+    <TextView
+        android:id="@+id/textViewSinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#80FFFFFF"
+        android:textSize="15sp"
+        android:text="Michael Jackson"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewSong"/>
+
+
+    <co.mobiwise.playerview.MusicPlayerView
+        android:id="@+id/mpv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textViewSinger"
+        app:textSize = "14sp"
+        app:textColor = "#80FFFFFF"
+        app:buttonColor = "#efefef"
+        app:progressLoadedColor = "#00815e"/>
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/icon_like"
+        android:layout_below="@+id/mpv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_next"
+        android:layout_below="@+id/mpv"
+        android:layout_alignRight="@+id/mpv"
+        android:layout_marginTop="50dp"/>
+
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_prev"
+        android:layout_below="@+id/mpv"
+        android:layout_alignLeft="@+id/mpv"
+        android:layout_marginTop="50dp"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:progressDrawable="@drawable/seekbar_progressbar"
+        android:progress="0"
+        android:thumbTintMode="multiply"
+        android:max="100"
+        android:thumb="@drawable/seekbar_thumb"
+        android:layout_below="@+id/textViewSinger"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar2"
+        android:layout_below="@+id/mpv"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
